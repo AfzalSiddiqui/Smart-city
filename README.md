@@ -1,1 +1,1 @@
-# smart-city
+# Smart City Platform
