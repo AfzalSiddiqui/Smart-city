@@ -3,7 +3,7 @@ export const Strings = {
   REGISTRATION_TITLE: 'Create Account',
   REGISTER_WITH_EMAIL: 'Register with Email',
   REGISTER_WITH_PHONE: 'Register with Phone',
-  REGISTER_WITH_LINKEDIN: 'Register with LinkedIn',
+  REGISTER_WITH_LINKEDIN:  'Register with LinkedIn',
   
   // Login
   LOGIN_TITLE: 'Login',
