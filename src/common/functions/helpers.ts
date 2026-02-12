@@ -7,23 +7,23 @@ export const Helpers = {
     if (cleaned.length <= 3) {
       return cleaned;
     } else if (cleaned.length <= 6) {
-      return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3)}`;
+      return `(${cleaned.slice(0, 3)})  ${cleaned.slice(3)}`;
     } else {
-      return `(${cleaned.slice(0, 3)}) ${cleaned.slice(3, 6)}-${cleaned.slice(6, 10)}`;
+      return `(${cleaned.slice(0, 3)})  ${cleaned.slice(3, 6)}-${cleaned.slice(6, 10)}`;
     }
   },
 
-  debounce: <T extends (...args: any[]) => any>(
+  debounce: <T extends (...args: any[]) =>  any>(
     func: T,
     wait: number
   ): ((...args: Parameters<T>) => void) => {
-    let timeout: NodeJS.Timeout | null = null;
+    let timeout: NodeJS.Timeout | null =  null;
     
     return (...args: Parameters<T>) => {
       if (timeout) {
         clearTimeout(timeout);
       }
-      timeout = setTimeout(() => func(...args), wait);
+      timeout = setTimeout(() => func(...args),  wait);
     };
   },
 
